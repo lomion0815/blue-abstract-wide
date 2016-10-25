@@ -49,7 +49,7 @@
                         <font>text_small</font>
                         <multiline>no</multiline>
                         <align>allcenter</align>
-                        <scroll direction="left" />
+                        <!--scroll direction="left" /-->
                     </textarea>
 
                     <!-- Shows the background image (if no thumbnail is available) or 
@@ -90,9 +90,9 @@
                     </imagetype>
 
                     <!-- Shows if the item is marked or not -->
-                    <statetype name="nodecheck">
+                    <statetype name="buttoncheck">
                         <position>96,3</position>
-                        <state name="full">
+                        <state type="full">
                             <shape name="buttoncheck_background" from="base_background_shape">
                                 <area>0,0,34,34</area>
                                 <line color="#AAAAAA" alpha="0" width="0" />
@@ -105,7 +105,7 @@
                     </statetype>
                     
                     <!-- Shows if the item is either hidden or visible -->
-                    <statetype name="nodevisibility">
+                    <statetype name="buttonstate">
                         <position>62,3</position>
                         <state name="hidden">
                             <shape name="buttoncheck_background" from="base_background_shape">
@@ -121,7 +121,7 @@
 
                     <!-- Shows the type of the item. It can be either 
                          a subfolder, upfolder, image or a video -->
-                    <statetype name="nodetype">
+                    <statetype name="buttontype">
                         <position>0,0</position>
                         <state name="subfolder">
                             <shape name="subfolder_background" from="base_background_shape">
